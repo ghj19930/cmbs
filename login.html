@@ -19,17 +19,17 @@
                     <h1>合规管理平台</h1>
                     <small>Compliance management platform</small>
                 </div>
-                <form class="form" action="#">
+                <form class="form" action="index.html" target="_blank">
                     <div class="username">
                         <i class="icon icon-touxiang"></i>
-                        <input type="text" value="" class="input">
-                        <p class="prompt-text">请输入用户名</p>
+                        <input id="user" type="text" value="" class="input">
+                        <label for="user" class="prompt-text">请输入用户名</label>
                         <p class="error-text">请输入用户名</p>
                     </div>
                     <div class="password">
                         <i class="icon icon-mima"></i>
-                        <input type="password" value="" class="input">
-                        <p class="prompt-text">请输入密码</p>
+                        <input id="pwd" type="password" value="" class="input">
+                        <label for="pwd" class="prompt-text">请输入密码</label>
                         <p class="error-text">请输入密码</p>
                     </div>
                     <button type="submit" class="login-btn">登 录</button>
@@ -38,21 +38,7 @@
         </div>
     </div>
     <script src="js/libs/jquery.min.js"></script>
+    <script src="js/login.js"></script>
     <script src="js/libs/scrollReveal.min.js"></script>
-    <script src="js/public.js"></script>
-    <script>
-        $(function () {
-//            var _input = $(".username,.password");
-            $(".form input").focus(function () {
-                $(this).parent().addClass("input-hint").removeClass("error-hint");
-                $(this).parent().siblings().find(".error-text").slideUp(200);
-            });
-            $(".form input").blur(function () {
-                $(this).parent().addClass("error-hint").removeClass("input-hint");
-                $(this).parent().siblings().find(".error-text").slideDown(200);
-            })
-
-        })
-    </script>
 </body>
 </html>

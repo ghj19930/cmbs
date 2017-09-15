@@ -62,12 +62,9 @@
       border: 1px solid #e7e5ec;
       .radius(2px);
       margin: 0 auto 16px;
-      padding:11px 20px 11px 52px;
+      padding:0 20px 0 52px;
       -webkit-transition:.4s ease;
       transition:.4s ease;
-      @w:226px;
-      @h:32px;
-      @lh:32px;
       &.input-hint{
         border-color:@c-blur;
         -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
@@ -85,9 +82,9 @@
         z-index:1;
         .bg-c(@c-white);
         .pl(52px);
-        .w(@w );
-        .h(@h);
-        .lh(@lh);
+        .w(226px);
+        .h(26px);
+        .lh(26px);
         .font-c(@c-red);
         border:1px solid @c-red;
       }
@@ -99,9 +96,11 @@
         .font(24px)
       }
       input{
+        .pr;
+        z-index: 1;
         .w(100%);
-        .h(20px);
-        .lh(20px);
+        .h(42px);
+        .lh(42px);
         .bg-c(transparent)
       }
       .prompt-text{
@@ -115,9 +114,6 @@
         .font-c(#bcbaba);
         cursor: text;
       }
-    }
-    .error{
-
     }
     .login-btn{
       display:block;
