@@ -1,0 +1,162 @@
+.bg {
+  background: #5b26d6;
+  background: -moz-linear-gradient(left, #5b26d6 0%, #7526d5 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #5b26d6), color-stop(100%, #7526d5));
+  background: -webkit-linear-gradient(left, #5b26d6 0%, #7526d5 100%);
+  background: -o-linear-gradient(left, #5b26d6 0%, #7526d5 100%);
+  background: -ms-linear-gradient(left, #5b26d6 0%, #7526d5 100%);
+  background: linear-gradient(to right, #5b26d6 0%, #7526d5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#5b26d6, endColorstr=#5b26d6, GradientType=1);
+}
+.container {
+  height: 100%;
+  background: url("../img/login-bg.png") no-repeat right center;
+}
+.login {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 916px;
+  margin: -276px 0 0 -458px;
+}
+.login .left,
+.login .right {
+  float: left;
+  height: 553px;
+  background-repeat: no-repeat;
+}
+.login .left {
+  position: relative;
+  z-index: 1;
+  width: 525px;
+  background-image: url("../img/login-l-bg.png");
+  color: #fff;
+  font-size: 26px;
+}
+.login .left p {
+  margin: 318px 0 0 95px;
+  line-height: 44px;
+  letter-spacing: 2px;
+}
+.login .right {
+  position: absolute;
+  right: 2px;
+  top: 0;
+  width: 465px;
+  background-image: url("../img/login-r-bg.png");
+  padding-left: 90px;
+}
+.login .right .logo {
+  margin-top: 60px;
+  text-align: center;
+}
+.login .right .logo h1,
+.login .right .logo small {
+  color: #572860;
+}
+.login .right .logo h1 {
+  font-size: 24px;
+  margin-top: 11px;
+}
+.login .right .logo small {
+  display: block;
+  margin-top: 5px;
+  font-size: 12px;
+}
+.login .right .form {
+  margin-top: 60px;
+}
+.login .right .username,
+.login .right .password {
+  position: relative;
+  width: 206px;
+  border: 1px solid #e7e5ec;
+  border-radius: 2px;
+  margin: 0 auto 16px;
+  padding: 11px 20px 11px 52px;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+}
+.login .right .username.input-hint,
+.login .right .password.input-hint {
+  border-color: #68a6fb;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+.login .right .username.error-hint,
+.login .right .password.error-hint {
+  border-color: #fe746a;
+  box-shadow: none;
+}
+.login .right .username .error-text,
+.login .right .password .error-text {
+  display: none;
+  position: absolute;
+  top: 44px;
+  left: -1px;
+  z-index: 1;
+  background-color: #fff;
+  padding-left: 52px;
+  width: 226px;
+  height: 32px;
+  line-height: 32px;
+  color: #fe746a;
+  border: 1px solid #fe746a;
+}
+.login .right .username i,
+.login .right .password i {
+  position: absolute;
+  top: 10px;
+  left: 14px;
+  color: #d5cad7;
+  font-size: 24px;
+}
+.login .right .username input,
+.login .right .password input {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  background-color: transparent;
+}
+.login .right .username .prompt-text,
+.login .right .password .prompt-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 226px;
+  height: 44px;
+  line-height: 42px;
+  padding-left: 52px;
+  color: #bcbaba;
+  cursor: text;
+}
+.login .right .login-btn {
+  display: block;
+  width: 280px;
+  height: 44px;
+  border-radius: 20px;
+  margin: 30px auto 0;
+  box-shadow: 0 3px 0 #edecf1;
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  background: #3ea4fd;
+  background: -moz-linear-gradient(left, #3ea4fd 0%, #63e1fd 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #3ea4fd), color-stop(100%, #63e1fd));
+  background: -webkit-linear-gradient(left, #3ea4fd 0%, #63e1fd 100%);
+  background: -o-linear-gradient(left, #3ea4fd 0%, #63e1fd 100%);
+  background: -ms-linear-gradient(left, #3ea4fd 0%, #63e1fd 100%);
+  background: linear-gradient(to right, #3ea4fd 0%, #63e1fd 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#3ea4fd, endColorstr=#3ea4fd, GradientType=1);
+}
+.login .right .login-btn:hover {
+  background: #3ea4fd;
+  background: -moz-linear-gradient(left, #3ea4fd 0%, #3ea4fd 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #3ea4fd), color-stop(100%, #3ea4fd));
+  background: -webkit-linear-gradient(left, #3ea4fd 0%, #3ea4fd 100%);
+  background: -o-linear-gradient(left, #3ea4fd 0%, #3ea4fd 100%);
+  background: -ms-linear-gradient(left, #3ea4fd 0%, #3ea4fd 100%);
+  background: linear-gradient(to right, #3ea4fd 0%, #3ea4fd 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#3ea4fd, endColorstr=#3ea4fd, GradientType=1);
+}

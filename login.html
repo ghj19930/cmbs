@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body class="bg">
+    <div class="container">
+        <div class="login">
+            <div class="left" data-scroll-reveal="enter left and move 80px after 0.2s">
+                <p>欢迎您,<br/>登录本网站</p>
+            </div>
+            <div class="right" data-scroll-reveal="enter right and move 80px after 0.2s">
+                <div class="logo">
+                    <!--<img src="img/logo.png" alt="">-->
+                    <h1>合规管理平台</h1>
+                    <small>Compliance management platform</small>
+                </div>
+                <form class="form" action="#">
+                    <div class="username">
+                        <i class="icon icon-touxiang"></i>
+                        <input type="text" value="" class="input">
+                        <p class="prompt-text">请输入用户名</p>
+                        <p class="error-text">请输入用户名</p>
+                    </div>
+                    <div class="password">
+                        <i class="icon icon-mima"></i>
+                        <input type="password" value="" class="input">
+                        <p class="prompt-text">请输入密码</p>
+                        <p class="error-text">请输入密码</p>
+                    </div>
+                    <button type="submit" class="login-btn">登 录</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/libs/scrollReveal.min.js"></script>
+    <script src="js/public.js"></script>
+    <script>
+        $(function () {
+//            var _input = $(".username,.password");
+            $(".form input").focus(function () {
+                $(this).parent().addClass("input-hint").removeClass("error-hint");
+                $(this).parent().siblings().find(".error-text").slideUp(200);
+            });
+            $(".form input").blur(function () {
+                $(this).parent().addClass("error-hint").removeClass("input-hint");
+                $(this).parent().siblings().find(".error-text").slideDown(200);
+            })
+
+        })
+    </script>
+</body>
+</html>

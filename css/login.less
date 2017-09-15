@@ -1,0 +1,138 @@
+@import './public';
+.bg{
+  .gradient(#5b26d6,#7526d5)
+}
+.container{
+  .h(100%);
+  background: url("../img/login-bg.png") no-repeat right center
+}
+
+.login{
+  .pa;
+  left: 50%;
+  top: 50%;
+  .w(916px);
+  margin:-276px 0 0 -458px;
+  .left,.right{
+    .fl;
+    .h(553px);
+    background-repeat: no-repeat;
+  }
+  .left{
+    .pr;
+    z-index: 1;
+    .w(525px);
+    background-image: url("../img/login-l-bg.png");
+    .font-c(@c-white);
+    .font(26px);
+    p{
+      margin: 318px 0 0 95px;
+      .lh(44px);
+      letter-spacing:2px
+    }
+  }
+  .right{
+    .pa;
+    right: 2px;
+    top: 0;
+    .w(465px);
+    background-image: url("../img/login-r-bg.png");
+    .pl(90px);
+    .logo{
+      .mt(60px);.tc;
+      h1,small{
+        .font-c(#572860)
+      }
+      h1{
+        .font(24px);
+        .mt(11px)
+      }
+      small{
+        display: block;
+        .mt(5px);
+        .font(12px);
+      }
+    }
+    .form{
+      .mt(60px)
+    }
+    .username,.password{
+      .pr;
+      .w(206px);
+      border: 1px solid #e7e5ec;
+      .radius(2px);
+      margin: 0 auto 16px;
+      padding:11px 20px 11px 52px;
+      -webkit-transition:.4s ease;
+      transition:.4s ease;
+      @w:226px;
+      @h:32px;
+      @lh:32px;
+      &.input-hint{
+        border-color:@c-blur;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+      }
+      &.error-hint{
+        border-color: @c-red;
+        box-shadow:none;
+      }
+      .error-text{
+        .hide;
+        .pa;
+        top:44px;
+        left:-1px;
+        z-index:1;
+        .bg-c(@c-white);
+        .pl(52px);
+        .w(@w );
+        .h(@h);
+        .lh(@lh);
+        .font-c(@c-red);
+        border:1px solid @c-red;
+      }
+      i{
+        .pa;
+        top: 10px;
+        left: 14px;
+        .font-c(#d5cad7);
+        .font(24px)
+      }
+      input{
+        .w(100%);
+        .h(20px);
+        .lh(20px);
+        .bg-c(transparent)
+      }
+      .prompt-text{
+        .pa;
+        top:0;
+        left:0;
+        .w(226px);
+        .h(44px);
+        .lh(42px);
+        .pl(52px);
+        .font-c(#bcbaba);
+        cursor: text;
+      }
+    }
+    .error{
+
+    }
+    .login-btn{
+      display:block;
+      .w(280px);
+      .h(44px);
+      .radius(20px);
+      margin: 30px auto 0;
+      box-shadow:0 3px 0 #edecf1;
+      cursor: pointer;
+      .font-c(@c-white);
+      .font(18px);font-weight: bold;
+      .gradient(#3ea4fd,#63e1fd);
+      &:hover{
+        .gradient(#3ea4fd,#3ea4fd);
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.fl(){float: left}
+.fr(){float: right}
+.pa(){position: absolute}
+.pf(){position: fixed}
+.pr(){position: relative}
+.tr(){text-align: right}
+.tc(){text-align: center}
+
+.w(@w){width:@w;}
+.h(@h){height: @h;}
+.lh(@lh){line-height:@lh;}
+.font(@f){font-size:@f;}
+.font-c(@c){color: @c;}
+.bg-c(@c){background-color: @c}
+
+.mt(@t){ margin-top:@t;}
+.mr(@r){ margin-right:@r;}
+.mb(@b){ margin-bottom:@b;}
+.ml(@l){ margin-left:@l;}
+
+.pt(@t){ padding-top:@t;}
+.pr(@r){ padding-right:@r;}
+.pb(@b){ padding-bottom:@b;}
+.pl(@l){ padding-left:@l;}
+
+.bt(@px,@color){border-top:@px solid @color}
+.br(@px,@color){border-right:@px solid @color}
+.bb(@px,@color){border-bottom:@px solid @color}
+.bl(@px,@color){border-right:@px solid @color}
+.radius(@r){border-radius:@r}
+
+.clearfix(){&:before,&:after{content:"";display:block;clear:both;} *zoom:1;}
+.hide(){display: none}
+
+@c-white:#fff;
+@c-blur:#68a6fb;
+@c-red:#fe746a;
+
+
+.gradient(@scolor,@ecolor){
+  background: @scolor;
+  background: -moz-linear-gradient(left, @scolor 0%, @ecolor 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, @scolor), color-stop(100%, @ecolor));
+  background: -webkit-linear-gradient(left, @scolor 0%, @ecolor 100%);
+  background: -o-linear-gradient(left, @scolor 0%, @ecolor 100%);
+  background: -ms-linear-gradient(left, @scolor 0%, @ecolor 100%);
+  background: linear-gradient(to right, @scolor 0%, @ecolor 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=@scolor, endColorstr=@scolor, GradientType=1 );
+}
