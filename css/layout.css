@@ -1,1 +1,78 @@
 @charset "utf-8";
+.container {
+  height: 100%;
+  overflow: hidden;
+  min-width: 1150px;
+  background-color: #e3e3e3;
+}
+.head {
+  height: 230px;
+  background: #8c5dc3;
+  background: -moz-linear-gradient(left, #8c5dc3 0%, #58419c 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #8c5dc3), color-stop(100%, #58419c));
+  background: -webkit-linear-gradient(left, #8c5dc3 0%, #58419c 100%);
+  background: -o-linear-gradient(left, #8c5dc3 0%, #58419c 100%);
+  background: -ms-linear-gradient(left, #8c5dc3 0%, #58419c 100%);
+  background: linear-gradient(to right, #8c5dc3 0%, #58419c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#8c5dc3, endColorstr=#8c5dc3, GradientType=1);
+}
+.head-box {
+  height: 230px;
+  background: url("../img/head-bg.png") no-repeat right top;
+}
+.menu {
+  float: left;
+  width: 180px;
+  height: 100%;
+  background-color: #2a3e52;
+  overflow: hidden;
+}
+.menu-box {
+  width: 200px;
+  height: 100%;
+  overflow-y: auto;
+}
+.menu a {
+  display: block;
+  font-size: 16px;
+}
+.menu .item-a {
+  height: 60px;
+  line-height: 60px;
+  color: #899ec7;
+  padding-left: 25px;
+}
+.menu .item-a.current,
+.menu .item-a:hover {
+  background-color: #104e68;
+  color: #fff;
+}
+.menu-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 14px;
+}
+.menu .lev2 {
+  display: none;
+}
+.menu .lev2-item-a {
+  height: 40px;
+  line-height: 40px;
+  text-indent: 54px;
+  color: #b2bed6;
+  background-color: #003140;
+}
+.menu .lev2-item.current .lev2-item-a,
+.menu .lev2-item-a:hover {
+  color: #00a49b;
+}
+.menu .main-right {
+  position: relative;
+  height: 100%;
+  margin-left: 180px;
+}
+.menu .main-right .iframe-box {
+  height: 100%;
+  padding-top: 28px;
+}
